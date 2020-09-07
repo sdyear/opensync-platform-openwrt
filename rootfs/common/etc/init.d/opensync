@@ -44,4 +44,6 @@ stop_service() {
     rm -rf ${CERTS_DEST_PATH}
     echo "Killing managers"
     killall cm nm wm lm
+    echo "killing hostapd"
+    killall hostapd
 }
